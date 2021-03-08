@@ -302,6 +302,12 @@ keyFunc_paste(){
     Return
 }
 
+keyFunc_undo(){
+    global
+    SendInput, ^{z}
+    Return
+}
+
 
 keyFunc_tabPrve(){
     SendInput, ^+{tab}

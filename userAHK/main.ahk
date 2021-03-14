@@ -11,8 +11,6 @@
 ; 3. Save, reload Capslock+ (CapsLock+F5)
 ; 4. Press `CapsLock+F7` to invoke the function
 
-#include demo.ahk
-
 keyFunc_example1(){
   msgbox, example1
 }

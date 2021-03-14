@@ -405,6 +405,13 @@ keyFunc_selectWordRight(i:=1){
     return
 }
 
+; 在下一行创建新的一行
+keyFunc_createNewLine(){
+    SendInput, {End}
+    SendInput, {Enter}
+    return
+}
+
 ;页面移动一行，光标不动
 keyFunc_pageMoveLineUp(i:=1){
     SendInput, ^{Up %i%}

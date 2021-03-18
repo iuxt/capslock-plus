@@ -112,13 +112,10 @@ keyFunc_translate(){
     }
     else
     { 
-        ClipboardOld:=ClipboardAll
-        Clipboard:=""
         SendInput, ^{Left}^+{Right}^{insert}
         ClipWait, 0.05
         selText:=Clipboard
         ydTranslate(selText)
-        Clipboard:=ClipboardOld
     }
     SetTimer, setTransGuiActive, -400
     Return
@@ -186,39 +183,6 @@ keyFunc_esc(){
 keyFunc_enter(){
     SendInput, {Enter}
     Return
-}
-
-;双字符
-keyFunc_doubleChar(char1,char2:=""){
-    if(char2=="")
-    {
-        char2:=char1
-    }
-    charLen:=StrLen(char2)
-    selText:=getSelText()
-    ClipboardOld:=ClipboardAll
-    if(selText)
-    {
-        Clipboard:=char1 . selText . char2
-        SendInput, +{insert}
-    }
-    else
-    {
-        Clipboard:=char1 . char2
-        SendInput, +{insert}{left %charLen%}
-    }
-    Sleep, 100
-    Clipboard:=ClipboardOld
-    Return
-}
-
-keyFunc_sendChar(char){
-    ClipboardOld:=ClipboardAll
-    Clipboard:=char
-    SendInput, +{insert}
-    Sleep, 50
-    Clipboard:=ClipboardOld
-    return
 }
 
 
@@ -534,4 +498,16 @@ keyFunc_unshiftWinMinimizeStack(){
 
 keyFunc_winTransparent(){
     winTransparent()
+}
+
+; 浏览器右边的标签
+keyFunc_moveTabRight(){
+    SendInput, ^{tab}
+    return
+}
+
+; 浏览器左边的标签
+keyFunc_moveTabLeft(){
+    SendInput, ^+{tab}
+    return
 }

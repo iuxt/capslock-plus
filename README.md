@@ -21,13 +21,9 @@
 |:---|:---|
 |lib_bindWins.ahk|窗口绑定|
 |lib_functions.ahk|一些依赖函数|
-|lib_init.ahk|各种初始化从这里开始|
 |lib_json.ahk|json库|
 |lib_keysFunction.ahk|几乎所有按键功能都在这实现|
 |lib_keysSet.ahk|热键布局|
-|lib_language.ahk|程序用到的字符串放到这|
 |lib_loadAnimation.ahk|程序加载动画|
-|lib_mouseSpeed.ahk|鼠标变速|
 |lib_settings.ahk|Capslock+settings.ini设置项提取|
 |lib_ydTrans.ahk|翻译|
-

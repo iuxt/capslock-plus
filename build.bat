@@ -1,0 +1,1 @@
+"C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "CapsLock+.ahk" /icon "capslock+icon.ico" 

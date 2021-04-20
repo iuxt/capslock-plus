@@ -27,3 +27,11 @@
 |lib_loadAnimation.ahk|程序加载动画|
 |lib_settings.ahk|Capslock+settings.ini设置项提取|
 |lib_ydTrans.ahk|翻译|
+
+## 编译
+可以编译也可以不编译,不编译更有利于分发给别人使用
+编译执行build.bat 即可
+
+## 编译
+可以编译也可以不编译,不编译更有利于分发给别人使用
+编译执行build.bat 即可

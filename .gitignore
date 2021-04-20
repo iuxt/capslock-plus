@@ -1,7 +1,7 @@
 # =========================
 # Add myself
 # =========================
-
+CapsLock+.exe
 /CapsLock+run
 /CapsLock icon
 /old_version

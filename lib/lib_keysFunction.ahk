@@ -522,3 +522,13 @@ keyFunc_insertCodeBlock(){
     SendInput, {End}
     return
 }
+
+; markdown 插入表格
+keyFunc_insertTable(){
+    SendInput, |   |   |
+    Sendinput, {Enter}
+    Sendinput, |---|---|
+    Sendinput, {Enter}
+    SendInput, |   |   |
+    return
+}

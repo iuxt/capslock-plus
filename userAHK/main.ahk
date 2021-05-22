@@ -11,6 +11,21 @@
 ; 3. Save, reload Capslock+ (CapsLock+F5)
 ; 4. Press `CapsLock+F7` to invoke the function
 
-keyFunc_example1(){
-  msgbox, example1
+
+; markdown 插入 代码块
+keyFunc_insertCodeBlock(){
+    SendInput, ``````
+    Sendinput, {Enter}
+    Sendinput, {Enter}
+    Sendinput, ``````
+    Sendinput, {Up 2}
+    SendInput, {End}
+    return
+}
+
+; markdown 插入表格
+keyFunc_insertTable(){
+    Clipboard = |     |     |`n| --- | --- |`n|     |     |`n
+    Send ^v
+    return
 }

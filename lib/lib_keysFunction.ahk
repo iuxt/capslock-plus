@@ -525,10 +525,7 @@ keyFunc_insertCodeBlock(){
 
 ; markdown 插入表格
 keyFunc_insertTable(){
-    SendInput, |   |   |
-    Sendinput, {Enter}
-    Sendinput, |---|---|
-    Sendinput, {Enter}
-    SendInput, |   |   |
+    Clipboard = |     |     |`n| --- | --- |`n|     |     |`n
+    Send ^v
     return
 }
